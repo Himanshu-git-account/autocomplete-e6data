@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.searchBox {
+  padding: 10px 20px;
+  background-color: #D6D3F0;
+  font-size: 16px;
+  outline: none;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchButton {
+  padding: 10px 20px;
+  background-color: #0B3142;
+  color: #D6D3F0;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchButton:hover {
+  color: #0B3142;
+  background-color: #D6D3F0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchContainer {
+  margin-top: 2%;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.resultContainer {
+  position: relative;
+  width: 21%;
+  z-index: 10;
+  /* Center the result container horizontally */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: scroll;
+  background-color: #D6D3F0;
+
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+.errorText {
+  background-color: #D21F3C;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.card-item {
+  max-height: 300px;
+  overflow-y: scroll;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.card-item:hover {
+  transform: scale(1.1);
 }
