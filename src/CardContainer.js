@@ -1,12 +1,14 @@
-import React from 'react'
-import CardItem from './CardItem'
+import React from "react";
+import CardItem from "./CardItem";
 
-const CardContainer = ({card}) => {
-    return <div className='card-container row'>
-    {card.map((item)=> <CardItem item={item}/>
-    )}
+const CardContainer = ({ card }) => {
+  return (
+    <div className="row card-container ">
+      {card.map((item) => (
+        <CardItem item={item} />
+      ))}
     </div>
-  
-}
+  );
+};
 
-export default CardContainer
+export default CardContainer;

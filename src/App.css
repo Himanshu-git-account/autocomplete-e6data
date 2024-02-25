@@ -31,7 +31,7 @@
   /* Center the result container horizontally */
 }
 
-ul {
+.ul-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -46,17 +46,17 @@ ul {
 
 }
 
-li {
+.li-list {
   padding: 8px;
   border-bottom: 1px solid #eee;
   cursor: pointer;
 }
 
-li:last-child {
+.li-list:last-child {
   border-bottom: none;
 }
 
-li:hover {
+.li-list:hover {
   background-color: #f0f0f0;
 }
 
@@ -70,12 +70,15 @@ li:hover {
 }
 
 .card-item {
-  max-height: 300px;
-  overflow-y: scroll;
+  font-size: 12px;
   transition: transform 0.3s ease-in-out;
 }
 
 
 .card-item:hover {
   transform: scale(1.1);
+}
+
+.card-container {
+  margin: 20px !important;
 }
